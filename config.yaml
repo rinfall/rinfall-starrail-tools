@@ -1,0 +1,31 @@
+# Rinfall StarRail Tools 运行配置
+
+game:
+  # 游戏可执行文件路径 (如留空或不正确，工具会尝试通过常见注册表路径自动查找)
+  path: "D:\\Neverness To Everness\\Game\\StarRail.exe"
+  # 游戏渠道: cn (官服), bilibili (B服), global (国际服)
+  channel: "cn"
+  # 启动游戏最长等待时间 (秒)
+  launch_timeout: 60
+
+account:
+  # 是否开启自动填账密 (通常客户端会记住登录态，设为 false 即可)
+  auto_login: false
+  username: ""
+  password: ""
+
+stamina:
+  # 最低保留体力 (当体力小于等于该值时停止刷取，默认为 0)
+  reserve_stamina: 0
+  # 目标副本类型: "侵蚀隧洞" | "拟造花萼（金）" | "拟造花萼（赤）" | "凝滞虚影" | "历战余响"
+  target_dungeon: "侵蚀隧洞"
+  # 单次运行最大挑战轮次上限
+  max_runs: 6
+  # 遇到沉浸器是否使用
+  use_immersion_device: true
+
+system:
+  # 任务完成后的动作: "keep_running" (仅退出脚本), "close_game" (关闭游戏), "sleep" (休眠), "shutdown" (关机)
+  post_action: "keep_running"
+  # 日志级别: DEBUG, INFO, WARNING, ERROR
+  log_level: "INFO"
