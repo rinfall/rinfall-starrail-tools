@@ -20,7 +20,10 @@ class OcrEngine:
     def _get_engine(self):
         if self._engine is None:
             try:
-                from rapidocr import RapidOCR
+                try:
+                    from rapidocr_onnxruntime import RapidOCR
+                except ImportError:
+                    from rapidocr import RapidOCR
                 self._engine = RapidOCR(params={"Global.log_level": "error"})
                 logger.debug("RapidOCR 引擎初始化完成")
             except ImportError:

@@ -2,7 +2,7 @@
 
 game:
   # 游戏可执行文件路径 (如留空或不正确，工具会尝试通过常见注册表路径自动查找)
-  path: "D:\\Neverness To Everness\\Game\\StarRail.exe"
+  path: "D:\\miHoYo Launcher\\games\\Star Rail Game\\StarRail.exe"
   # 游戏渠道: cn (官服), bilibili (B服), global (国际服)
   channel: "cn"
   # 启动游戏最长等待时间 (秒)
